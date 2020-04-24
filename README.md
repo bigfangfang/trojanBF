@@ -24,12 +24,13 @@
 6. 安装trojan
 
     1）一键安装：
-    ```
+```
 curl -O https://raw.githubusercontent.com/atrandys/trojan/master/trojan_mult.sh && chmod +x trojan_mult.sh && ./trojan_mult.sh
 ```
 7. 查看和修改trojan服务器密码
+```
 vi /usr/src/trojan/server.conf
-
+```
                 注意：
                 1.如果提示 curl: command not found ，那是因为你的 VPS 没装 Curl
                     ubuntu/debian 系统安装 Curl 方法: apt-get update -y && apt-get install curl -y
@@ -40,7 +41,9 @@ vi /usr/src/trojan/server.conf
                 4·如果你真的忘记下载了，那么进入/usr/share/nginx/html/目录下，找到一个乱码文件夹，进入会看到客户端文件，使用sftp下载下来即可。
 
 8. 配置bbr加速
+```
    wget --no-check-certificate -O tcp.sh https://github.com/cx9208/Linux-NetSpeed/raw/master/tcp.sh && chmod +x tcp.sh && ./tcp.sh
+```
 
 推荐安装bbrplus加速
 先看自己vps是否安装了加速内核，是否是bbrplus加速内核，不是的话请按脚本提示进行对应的内核及加速模块的卸载和安装。
