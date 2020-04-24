@@ -24,8 +24,9 @@
 6. 安装trojan
 
     1）一键安装：
+    ```
 curl -O https://raw.githubusercontent.com/atrandys/trojan/master/trojan_mult.sh && chmod +x trojan_mult.sh && ./trojan_mult.sh
-
+```
 7. 查看和修改trojan服务器密码
 vi /usr/src/trojan/server.conf
 
